@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import MoviesList from './MoviesList';
-import './App.css';
+import MovieDetail from './MovieDetail';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <MoviesList />
+        <div className="sidebar">
+          <MoviesList />
+        </div>
+        <div className="main">
+          <MovieDetail />
+        </div>
       </div>
     );
   }

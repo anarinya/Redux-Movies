@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 class MoviesList extends Component {
   render() {
     return (
-      <ul>
+      <ul className="MoviesList">
         {this.props.movies.map((movie, i) => {
           return (
             <li
